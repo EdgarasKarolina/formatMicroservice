@@ -21,7 +21,7 @@ public class Listener {
     ObjectMapper mapper = new ObjectMapper();
     StringBuilder sb = new StringBuilder();
 
-    @JmsListener(destination = "jsonQueue")
+    @JmsListener(destination = "formatRequestQueue")
     @SendTo("formatedFile")
     public String receiveMessage(final Message jsonMessage) throws JMSException {
         String messageData = null;
