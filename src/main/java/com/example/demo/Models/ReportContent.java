@@ -42,14 +42,4 @@ public class ReportContent
     public void setAttendancePercentage(double attendancePercentage) {
         this.attendancePercentage = attendancePercentage;
     }
-
-    /*
-    public YearMonth getYearMonth() {
-        return yearMonth;
-    }
-
-    public void setYearMonth(YearMonth yearMonth) {
-        this.yearMonth = yearMonth;
-    }
-    */
 }

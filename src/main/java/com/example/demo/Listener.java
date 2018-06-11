@@ -43,7 +43,7 @@ public class Listener {
 
             List<ReportContent> listOfReports = reportData.getContent();
 
-            sb.append(reportData.getEmail());
+            sb.append(reportData.getToEmail());
             sb.append("\n");
             sb.append("Attendance statistics");
             for (ReportContent item : listOfReports )

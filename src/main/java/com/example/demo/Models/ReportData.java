@@ -1,25 +1,34 @@
 package com.example.demo.Models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReportData
 {
-    private String email;
+    private String toEmail;
     private List<ReportContent> content;
 
-    public String getEmail() {
-        return email;
+    public ReportData(){
+        this.content = new ArrayList<>();
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getToEmail() {
+        return toEmail;
+    }
+
+    public void setToEmail(String toEmail) {
+        this.toEmail = toEmail;
     }
 
     public List<ReportContent> getContent() {
         return content;
     }
 
-    public void setReportContent(List<ReportContent> content) {
+    public void setContent(List<ReportContent> content) {
         this.content = content;
+    }
+
+    public void addToContent(ReportContent element){
+        this.content.add(element);
     }
 }
